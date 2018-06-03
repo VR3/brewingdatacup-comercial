@@ -83,6 +83,11 @@ para generar nuestro **análisis predictivo** utilizando **Microsoft Azure ML St
 ![model](https://static.vr3.io/vr3/img/projects/dbc/model.png)
 
 
+Gráfica de Pronostico Incial
+
+![model](https://static.vr3.io/vr3/img/projects/dbc/histogram.jpg) 
+
+
 #### FACTORES EXTERNOS
 
 Usamos `python` para generar 5 scripts que consumen y limpian los datasets de los siguientes factores externos que consideramos pertinentes para tener un Dataset más acercado a la realidad.
@@ -100,9 +105,10 @@ Primero utilizamos la `latitud y longitud` para encontrar la **ENTIDAD** y a par
 
 | DESC  | RES |
 |:-:|:-:|
-| % Error de Modelo Pronosticado Mayo 2018  | **~ %22.364001** | 
-| Herramientas Utilizadas  |  Azure ML Studio, R, Python, Pandas, ggplot |
-| Factores Externos | Temperatrua, PIB Estatal, Indicador GINI, Actividad Turística 
+| % Error de Modelo Pronosticado Mayo 2018  | **.22364001** | 
+| Herramientas Utilizadas  |  Azure ML Studio, R, Python, Pandas, ggplot, googlemaps, numpy |
+| Factores Externos | Temperatrua, PIB Estatal, Indicador GINI, Actividad Turística
+
 
 > #### El **Dataset** de resultados de pronosticos se encuentra en *./data/output/forecast_result.csv*
 
