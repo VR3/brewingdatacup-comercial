@@ -13,6 +13,12 @@ El BDC es el Hackathon de Ciencia de Datos más importante de la CDMX. Es organi
 
 ---
 
+### INDEX
+
+- RETO
+- ESTRATEGIA
+- RESULTADOS
+
 ## RETO
 
 **Grupo Modelo** debe pronosticar la demanda 
@@ -90,18 +96,25 @@ Primero utilizamos la `latitud y longitud` para encontrar la **ENTIDAD** y a par
 - [Actividad Turística (Derrama Económica)](https://datos.gob.mx/busca/dataset/actividad-hotelera-por-entidad-federativa-ocupacion-y-llegada-de-turistas)
 
 
-### RESULTADOS
+## RESULTADOS
 
 | DESC  | RES |
 |:-:|:-:|
-| % Error de Modelo Pronosticado Mayo 2018  | ~77.3 | 
+| % Error de Modelo Pronosticado Mayo 2018  | **~ %22.364001** | 
 | Herramientas Utilizadas  |  Azure ML Studio, R, Python, Pandas, ggplot |
-| Factores Externos | Temperatrua, PIB Estatal, Indicador GINI, Actividad Turística |
-| Transformación de Variables |  |
+| Factores Externos | Temperatrua, PIB Estatal, Indicador GINI, Actividad Turística 
 
-#### INSIGHTS
+> #### El **Dataset** de resultados de pronosticos se encuentra en *./data/output/forecast_result.csv*
 
+#### FOLDER STRUCTURE
 
+![model](https://static.vr3.io/vr3/img/projects/dbc/tree.png)
 
-#### ESTRATEGIA
+## INSIGHTS
 
+Usar datos externos puede parecer buena idea pero encontramos que los datos disponibles utilizados tienden a generar ruido en las predicciones de los modelos utilizados
+
+- No encontramos correlación con la temperatura del estado y los hectolitros vendidos.
+- Hay una correlación muy tenue con la ocupación hotelera por estado y la venta de hectolitros.
+
+---
